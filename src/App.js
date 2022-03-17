@@ -16,6 +16,7 @@ import UserInfo from "./components/UserInfo";
 import Order from "./components/Order";
 import MyOrders from "./components/MyOrder";
 import Chatbot from "./components/Chatbot";
+import About from "./components/About";
 
 function App() {
   const state = useSelector((state) => {
@@ -37,7 +38,7 @@ function App() {
             <Route path="/order/:id" element={<Order />} />
             <Route path="/orders" element={<MyOrders />} />
 
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<About />} />
           </Routes>
         </div>
         {/* {!state.isLoggedIn ? <></> : <Home />} */}

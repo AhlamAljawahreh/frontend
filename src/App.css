@@ -75,3 +75,6 @@ background-repeat: no-repeat;
   top: 50%;
   left: 33%;
 }
+#About{
+  min-width: 100%;
+}

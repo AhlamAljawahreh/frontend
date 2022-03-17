@@ -29,7 +29,7 @@ const About = () => {
       <div className="row mb-5" id="About">
 
       <div className="card mb-3 bg-light" >
-  <div className="row ">
+  <div className="row " id="About">
       <div className="col-md-1">{   }</div>
     <div className="col-md-5 ps-5">
       <img src="https://res.cloudinary.com/aaaaahlllaaaam/image/upload/v1647432850/Maintenance_2_wxfvm1.gif" className="img-fluid rounded-start" alt="..."/>

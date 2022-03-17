@@ -32,7 +32,7 @@ const Home = () => {
   /******************************** */
   const getAllServices = async () => {
     try {
-      const res = await axios.get("/services", {
+      const res = await axios.get("https://expert-picker.herokuapp.com/services", {
         headers: {
           Authorization: ` Bearer ${state.token}`,
         },
@@ -91,7 +91,7 @@ const Home = () => {
   const updateOneService = async (id) => {
     try {
       const res = await axios.put(
-        `/services/${id}`,
+        `https://expert-picker.herokuapp.com/services/${id}`,
         { title, description, category, media },
         {
           headers: {

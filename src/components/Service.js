@@ -35,7 +35,7 @@ const Service = () => {
   //   ********************************************************
   const getServices = async () => {
     try {
-      const res = await axios.get(`/services/one/${id}`, {
+      const res = await axios.get(`https://expert-picker.herokuapp.com/services/one/${id}`, {
         headers: {
           Authorization: ` Bearer ${state.token}`,
         },
@@ -58,7 +58,7 @@ const Service = () => {
   const deleteOneService = async () => {
     try {
       const res = await axios.put(
-        `/services/delete/${id}`,
+        `https://expert-picker.herokuapp.com/services/delete/${id}`,
         {},
         {
           headers: {
@@ -99,7 +99,7 @@ const Service = () => {
   const updateOneService = async () => {
     try {
       const res = await axios.put(
-        `/services/${id}`,
+        `https://expert-picker.herokuapp.com/services/${id}`,
         { title, description, category, media },
         {
           headers: {
@@ -140,7 +140,7 @@ const Service = () => {
   const createOrder = async () => {
     try {
       const res = await axios.post(
-        `/orders/`,
+        `https://expert-picker.herokuapp.com/orders/`,
         { service_id: id ,order_desc },
         {
           headers: {

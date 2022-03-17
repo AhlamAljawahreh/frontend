@@ -22,7 +22,7 @@ const Navigation = () => {
 
   const getAllServicesByCategory = async (id) => {
     try {
-      const res = await axios.get(`/services/${id}`, {
+      const res = await axios.get(`https://expert-picker.herokuapp.com/services/${id}`, {
         headers: {
           Authorization: ` Bearer ${state.token}`,
         },
@@ -39,7 +39,7 @@ const Navigation = () => {
   /******************************** */
   const getAllServices = async () => {
     try {
-      const res = await axios.get("/services", {
+      const res = await axios.get("https://expert-picker.herokuapp.com/services", {
         headers: {
           Authorization: ` Bearer ${state.token}`,
         },

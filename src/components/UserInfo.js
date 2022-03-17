@@ -37,7 +37,7 @@ const UserInfo = () => {
   //   ********************************************************
   const getUserInfo = async () => {
     try {
-      const res = await axios.get(`/users/${id}`, {
+      const res = await axios.get(`https://expert-picker.herokuapp.com/users/${id}`, {
         headers: {
           Authorization: ` Bearer ${state.token}`,
         },
@@ -55,7 +55,7 @@ const UserInfo = () => {
   //   ****************************************************************
   const getUserRate = async () => {
     try {
-      const res = await axios.get(`/rate/${id}`, {
+      const res = await axios.get(`https://expert-picker.herokuapp.com/rate/${id}`, {
         headers: {
           Authorization: ` Bearer ${state.token}`,
         },
@@ -95,7 +95,7 @@ setRated(true)
   const putUserRate = async (rate) => {
     try {
       const res = await axios.post(
-        "/rate",
+        "https://expert-picker.herokuapp.com/rate",
         { worker_id: id, rate: rate },
         {
           headers: {
@@ -125,7 +125,7 @@ setRated(true)
   const updateUserInformation = async () => {
     try {
       const res = await axios.put(
-        `/users`,
+        `https://expert-picker.herokuapp.com/users`,
         { userName, email, country, phoneNumber },
         {
           headers: {
@@ -165,7 +165,7 @@ setRated(true)
   const updateUserImage = async (image) => {
     try {
       const res = await axios.put(
-        `/users/image`,
+        `https://expert-picker.herokuapp.com/users/image`,
         { image },
         {
           headers: {

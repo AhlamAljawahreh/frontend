@@ -21,7 +21,7 @@ const Login = () => {
   /* ************************* */
   const logInUser = async () => {
     try {
-      const res = await axios.post("/login", {
+      const res = await axios.post("https://expert-picker.herokuapp.com/login", {
         email: email,
         password: password,
       });
@@ -51,7 +51,7 @@ const Login = () => {
   /* *************************** */
   const signUp = () => {
     axios
-      .post("/users/", {
+      .post("https://expert-picker.herokuapp.com/users", {
         userName: userName,
         email: email,
         phoneNumber: phoneNumber,

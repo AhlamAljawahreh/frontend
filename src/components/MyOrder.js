@@ -26,7 +26,7 @@ const MyOrders = () => {
   //   ********************************************************
   const getMyOrders = async () => {
     try {
-      const res = await axios.get(`/orders`, {
+      const res = await axios.get(`https://expert-picker.herokuapp.com/orders`, {
         headers: {
           Authorization: ` Bearer ${state.token}`,
         },

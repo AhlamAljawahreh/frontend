@@ -26,7 +26,7 @@ const NewService = () => {
   const createNewService = async () => {
     try {
       const res = await axios.post(
-        "/services",
+        "https://expert-picker.herokuapp.com/services",
         { title, description, category ,media},
         {
           headers: {

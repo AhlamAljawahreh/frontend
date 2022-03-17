@@ -29,7 +29,7 @@ const Order = () => {
   //   ********************************************************
   const getOrder = async () => {
     try {
-      const res = await axios.get(`/orders/one/${id}`, {
+      const res = await axios.get(`https://expert-picker.herokuapp.com/orders/one/${id}`, {
         headers: {
           Authorization: ` Bearer ${state.token}`,
         },
@@ -49,7 +49,7 @@ const Order = () => {
   //   ****************************************************************
   const getorderedBYInfo = async (id) => {
     try {
-      const res = await axios.get(`/users/${id}`, {
+      const res = await axios.get(`https://expert-picker.herokuapp.com/users/${id}`, {
         headers: {
           Authorization: ` Bearer ${state.token}`,
         },
@@ -67,7 +67,7 @@ const Order = () => {
   const deleteOneOrder = async () => {
     try {
       const res = await axios.put(
-        `/orders/delete/${id}`,
+        `https://expert-picker.herokuapp.com/orders/delete/${id}`,
         {},
         {
           headers: {
@@ -106,7 +106,7 @@ const Order = () => {
 //   ********************************************************
   const getWorkerInfo = async (id) => {
     try {
-      const res = await axios.get(`/users/${id}`, {
+      const res = await axios.get(`https://expert-picker.herokuapp.com/users/${id}`, {
         headers: {
           Authorization: ` Bearer ${state.token}`,
         },
@@ -164,7 +164,7 @@ const Order = () => {
     const approveAnOrder = async () => {
         try {
           const res = await axios.put(
-            `/orders/status/${id}`,
+            `https://expert-picker.herokuapp.com/orders/status/${id}`,
             { status:"approved" },
             {
               headers: {

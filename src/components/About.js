@@ -26,7 +26,6 @@ const About = () => {
 </div>
 <img src="https://res.cloudinary.com/aaaaahlllaaaam/image/upload/v1647432850/Maintenance_2_wxfvm1.gif" className=" col-md-6"/>
       </div> */}
-      <div className="row mb-5" id="About">
 
       <div class="card mb-3 bg-light" >
   <div class="row ">
@@ -43,7 +42,6 @@ const About = () => {
     <div className="col-md-1">{   }</div>
 
   </div>
-</div>
 </div>
 <div class="container">
   <footer class="py-3 my-4 ">

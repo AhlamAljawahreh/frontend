@@ -29,7 +29,7 @@ const About = () => {
                 alt="..."
               />
             </div>
-            <div className="col-5 bg-light">
+            <div className="col bg-light">
               <div className="card-body ms-0 mt-5">
                 <h1 className="card-title fw-bolder text-center mb-4">About</h1>
                 <p className="card-text fs-5 ">

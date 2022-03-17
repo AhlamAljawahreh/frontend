@@ -1,0 +1,62 @@
+
+.dropdown #dropdownMenuButton1:hover{
+background-color: rgba(110, 108, 108, 0.541) ;
+}
+
+.user_image{
+    display: block;
+    width:10%;
+    height: 10%;
+    border-radius: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+.card-img-top ,.image-card{
+  height: 300px;
+  object-fit: cover;
+}
+.position-by-me{
+  position:absolute;
+  top:30px;
+  left:15%;
+  object-fit: cover;
+
+}
+.fixed_position{
+  position:relative;
+  left:4%;
+}
+ .mb-3{
+  width:300px;
+}
+/* .image-card{
+  object-fit: cover;
+} */
+
+.nav-link{
+  cursor: pointer;
+}
+.service-div{
+  cursor: pointer;
+
+}
+.my_design{
+  max-width: 540px;
+}
+.fixed_position2{
+  position:relative;
+  left:10%;
+}
+.position-absolute:hover{
+  background-color: rgba(110, 108, 108, 0.541) ;
+}
+.modal-image{
+width: 100px;
+height: 100px;
+object-fit: cover;
+margin-bottom: 10px;
+}
+
+.fill-danger{
+  fill:#DD3545,
+}

@@ -68,7 +68,7 @@ const Navigation = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light border">
       <div className="container-fluid">
-        <a className="navbar-brand" href="home">
+        <a className="navbar-brand" href="/">
           <img
             src="https://res.cloudinary.com/aaaaahlllaaaam/image/upload/v1646832423/logo_njkyc1.png"
             alt=""

@@ -18,15 +18,7 @@ const About = () => {
           Let Start{" "}
         </button>
       </div>
-      {/* <div className="row">
-      <div className=" col-md-6">
-          
-<h1>About</h1>
-<p type='text' className="text ">Exper picker is a website specialized in services that allows the user to order any maintenance cleaning or furniture moving service , and as worker allows you to present your services with detail. And to connect between the worker and customers from the same country or the city directly and faster.</p>
-</div>
-<img src="https://res.cloudinary.com/aaaaahlllaaaam/image/upload/v1647432850/Maintenance_2_wxfvm1.gif" className=" col-md-6"/>
 
-      </div> */}
       <div className="row mb-5" id="About">
 
       <div class="card mb-3 bg-light" >
